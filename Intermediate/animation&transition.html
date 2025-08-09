@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <button class="bg-blue-500 text-white px-4 py-2 m-5 rounded transition duration-100 ease-in-out hover:bg-blue-700 block">
+        Hover Me
+      </button>
+<!--The classes ease-in, ease-out, and ease-in-out in Tailwind CSS control how the speed of a transition changes over time — called easing functions.-->
+<button class="bg-blue-500 text-white px-4 py-2 m-6 rounded transition-all duration-500 ease-in hover:translate-x-10">
+    Ease-In
+  </button>
+  
+  <button class="bg-green-500 text-white px-4 py-2 m-6 rounded transition-all duration-500 ease-out hover:translate-x-10">
+    Ease-Out
+  </button>
+  
+  <button class="bg-purple-500 text-white px-4 py-2 m-6 rounded transition-all duration-500 ease-in-out hover:translate-x-10">
+    Ease-In-Out
+  </button>
+  
+
+    <div class="text-5xl animate-spin p-2 m-6 text-center block">🪩</div>
+
+      <!-- Pulse Card -->
+<div class="bg-green-500 text-white p-4 w-40 text-center rounded-lg animate-pulse max-w mx-auto">
+    Loading...
+  </div>
+  
+  <!-- Spinning Icon -->
+  <div class="text-4xl animate-spin mt-4 items-center justify-center text-center block top-0">🔄</div>
+
+  <div class="min-h-screen bg-gray-100 flex justify-center items-center space-x-6 p-10">
+  
+    <!-- Card 1: ease-in -->
+    <div class="bg-white p-6 rounded-lg shadow-md w-60 transition-all duration-500 ease-in hover:scale-105 hover:shadow-xl">
+      <h2 class="text-xl font-bold mb-2">Alice</h2>
+      <p class="text-gray-600">Loves coding & cats.</p>
+    </div>
+  
+    <!-- Card 2: ease-out -->
+    <div class="bg-white p-6 rounded-lg shadow-md w-60 transition-all duration-500 ease-out hover:scale-105 hover:shadow-xl">
+      <h2 class="text-xl font-bold mb-2">Bob</h2>
+      <p class="text-gray-600">Designs clean UIs.</p>
+    </div>
+  
+    <!-- Card 3: ease-in-out -->
+    <div class="bg-white p-6 rounded-lg shadow-md w-60 transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-xl ">
+      <h2 class="text-xl font-bold mb-2">Charlie</h2>
+      <p class="text-gray-600">Writes tech blogs.</p>
+    </div>
+  
+  </div>
+  
+  
+
+</body>
+</html>

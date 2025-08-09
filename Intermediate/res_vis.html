@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="block md:hidden bg-yellow-200 p-4">
+        Only visible on small screens (mobile)
+      </div>
+
+    <div class="hidden md:block bg-green-200 p-4">
+        Only visible on medium (md) screens and larger
+      </div>
+
+    <div class="block md:flex justify-between p-4 gap-4">
+        <div class="bg-blue-200 p-2">Item 1</div>
+        <div class="bg-blue-300 p-2">Item 2</div>
+      </div>
+
+      <div class="bg-gray-100 p-6 md:flex gap-4">   <!--  Create a card layout that: Stacks items vertically on mobile (block)|| Aligns items horizontally on larger screens (md:flex)-->
+        <div class="bg-white p-4 rounded shadow-md flex-1">
+          ✏️ Card 1
+        </div>
+        <div class="bg-white p-4 rounded shadow-md flex-1">
+          📚 Card 2
+        </div>
+        <div class="bg-white p-4 rounded shadow-md flex-1">
+          🧠 Card 3
+        </div>
+      </div>
+      <!--Create a button that's:
+          Hidden on desktop
+          Only shows up on small screens-->
+        <button class="bg-green-500 text-white px-4 py-2 rounded-md md:hidden">
+            ✅ Mobile Only Button
+        </button>
+          
+        
+</body>
+</html>

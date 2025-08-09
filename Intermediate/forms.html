@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tailwind Form with Background Video</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen">
+
+  <!-- 🔴 Background Video -->
+  <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🔵 Overlay to darken video (optional) -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+
+  <!-- 🟢 Form -->
+  <div class="relative z-20 flex items-center justify-center min-h-screen">
+    <form class="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg w-full max-w-md space-y-6 backdrop-blur-sm">
+      <h2 class="text-2xl font-bold text-center text-gray-700">Login</h2>
+
+      <div>
+        <label for="email" class="block text-gray-600 font-medium mb-1">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="you@example.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password" class="block text-gray-600 font-medium mb-1">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+          placeholder="••••••••"
+          required
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors"
+      >
+        Sign In
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tailwind Card with Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300">
+
+  <!-- 🌐 Navbar -->
+<nav class="bg-white shadow-xl fixed top-0 w-full z-50 ">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between ">
+      <div class="text-xl font-bold text-blue-600">MySite</div>
+      <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="#" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#" class="hover:text-blue-500">About</a></li>
+        <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+</nav>
+
+
+  <!-- 🧱 Card Section -->
+  <div class="flex items-start justify-center min-h-screen pt-10">
+    <div class="max-w-lg h-128 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 m-10">
+      
+      <img src="images\hidden_class.png" alt="Card Image" class="w-full max-h-96 object-cover ">
+
+      <div class="px-2 py-2">
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title</h2>
+        <p class="text-gray-600 mb-4">
+          This is a short description inside a responsive card built with Tailwind CSS.
+        </p>
+        <button  onclick="document.getElementById('modal').classList.remove('hidden')" 
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">
+          Read More
+        </button>
+      </div>
+
+    </div>
+    <div class="max-w-lg h-128 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 m-10">
+      
+        <img src="images\justify_items.png" alt="Card Image" class="w-full max-h-96 object-cover ">
+  
+        <div class="px-2 py-2">
+          <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title</h2>
+          <p class="text-gray-600 mb-4">
+            This is a short description inside a responsive card built with Tailwind CSS.
+          </p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">
+            Read More
+          </button>
+        </div>
+  
+      </div>
+    
+  </div>
+
+    <!-- 📍 Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white max-w-xl w-full rounded-lg overflow-hidden shadow-lg relative">
+          <!-- Close Button -->
+          <button onclick="document.getElementById('modal').classList.add('hidden')" class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl font-bold">&times;</button>
+          
+          <!-- Modal Image -->
+          <img src="images\hidden_class.png" alt="Full Image" class="w-full h-64 object-cover">
+    
+          <!-- Modal Content -->
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Full Description</h2>
+            <p class="text-gray-700">
+              This is the full content that appears in the modal when you click the "Read More" button. You can add more detailed information about the card here, including longer descriptions, links, or anything else.
+            </p>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

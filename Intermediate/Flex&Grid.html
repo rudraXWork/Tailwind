@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class=" flex justify-between items-center fixed top-0 w-full z-50 bg-blue-500 text-white p-4 mx-auto">
+        <div class="font-bold text-xl">Logo</div>
+        <div class="space-x-4">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+      
+    <div class="flex justify-between items-center bg-gray-100 px-4 py-4 mx-4 my-12">
+        <div class="bg-blue-300  p-2">Item 1</div>
+        <div class="bg-green-300 p-2">Item 2</div>
+        <div class="bg-red-300 p-2">Item 3</div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-pink-300 p-4">Item 1</div>
+        <div class="bg-pink-300 p-4">Item 2</div>
+        <div class="bg-pink-300 p-4">Item 3</div>
+        <div class="bg-pink-300 p-4">Item 4</div>
+      </div>
+      
+      <div class="grid grid-cols-4 grid-rows-3 gap-4 p-4">
+        <!-- Item 1: spans 2 columns -->
+        <div class="bg-blue-300 col-span-2 flex items-center justify-center p-4 text-white text-xl font-bold">Col Span 2</div>
+      
+        <!-- Item 2: spans 1 row -->
+        <div class="bg-green-300 row-span-2 flex items-center justify-center p-4 text-white text-xl font-bold">Row Span 2</div>
+      
+        <!-- Item 3 -->
+        <div class="bg-yellow-300 flex items-center justify-center p-4 text-black text-xl font-bold">Normal</div>
+      
+        <!-- Item 4: spans 2 rows and 2 columns -->
+        <div class="bg-red-400 col-span-2 row-span-2 flex items-center justify-center p-4 text-white text-xl font-bold">2 Cols, 2 Rows</div>
+      
+        <!-- Item 5 -->
+        <div class="bg-purple-400 row-span-2 flex items-center justify-center p-4 text-white text-xl font-bold">Normal</div>
+      
+        <!-- Item 6 -->
+        <div class="bg-pink-400  flex items-center justify-center p-4 text-white text-xl font-bold">Normal</div>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-4">
+        <div class="bg-red-300">1</div>
+        <div class="bg-green-300">2</div>
+        <div class="bg-blue-300">3</div>
+        <div class="bg-yellow-300">4</div>
+        <div class="bg-pink-300">5</div>
+      </div>
+      
+
+      <!-- Use grid for layout -->
+<div class="grid grid-cols-3 gap-6 p-6">
+
+  <!-- Each product card uses flex inside -->
+  <div class="bg-white shadow-md p-4  flex-col justify-between">
+    <img src="image.png" class="mb-4">
+    <h2 class="text-lg font-bold">Shirt</h2>
+    <p class="text-sm text-gray-500">Cotton, Blue</p>
+    
+    <!-- Flex for price and button -->
+    <div class="flex justify-between items-center mt-4">
+      <span class="text-green-600 font-semibold">$29</span>
+      <button class="bg-blue-500 text-white px-3 py-1 rounded">Buy</button>
+    </div>
+  </div>
+
+   <!-- Each product card uses flex inside -->
+   <div class="bg-white shadow-md p-4  flex-col justify-between">
+    <img src="image.png" class="mb-4">
+    <h2 class="text-lg font-bold">Shirt</h2>
+    <p class="text-sm text-gray-500">Cotton, Blue</p>
+    
+    <!-- Flex for price and button -->
+    <div class="flex justify-between items-center mt-4">
+      <span class="text-green-600 font-semibold">$29</span>
+      <button class="bg-blue-500 text-white px-3 py-1 rounded">Buy</button>
+    </div>
+  </div>
+
+     <!-- Each product card uses flex inside -->
+     <div class="bg-white shadow-md p-4  flex-col justify-between">
+      <img src="image.png" class="mb-4">
+      <h2 class="text-lg font-bold">Shirt</h2>
+      <p class="text-sm text-gray-500">Cotton, Blue</p>
+      
+      <!-- Flex for price and button -->
+      <div class="flex justify-between items-center mt-4">
+        <span class="text-green-600 font-semibold">$29</span>
+        <button class="bg-blue-500 text-white px-3 py-1 rounded">Buy</button>
+      </div>
+    </div>
+
+</div>
+
+     
+</body>
+</html>
